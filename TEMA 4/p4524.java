@@ -36,7 +36,7 @@ public class p4524 {
             irpf  = sueldo*0.20;
         }
         System.out.println("\n \n \n \n \n \n \n");
-        System.out.print(" SUELDO BASE: "+salario+" euros \n DIETAS ("+dias+" viajes) "+dietas+" euros \n"+" SUELDO BRUTO: "+sueldo+" euros \n RETENCION IRPF ("+irp+")  "+irpf+" euros \n SUELDO NETO: "+(sueldo - irpf)+" euros");;
+        System.out.print(" SUELDO BASE: "+salario+" euros \n DIETAS ("+dias+" viajes) "+dietas+" euros \n"+" SUELDO BRUTO: "+sueldo+" euros \n RETENCION IRPF ("+irp+")  "+irpf+" euros \n SUELDO NETO: "+(sueldo - irpf)+" euros");
              
     }
 }
