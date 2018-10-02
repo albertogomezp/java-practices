@@ -7,7 +7,7 @@ x : Tema
 y : Apartado  
 zz : Numero de práctica  
 ENGLISH  
-Repositorie where programming practises will be uploaded  
+Repository where programming practises will be uploaded  
 File name with format "pxyy.java" explanation  
 p : Practise  
 x : Unit  
