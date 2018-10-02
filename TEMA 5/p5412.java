@@ -1,19 +1,24 @@
 public class p5412 {
     public static void main(String[] args){
-        int num = 1;
-        int cont;
-        int cuadrado;
-        int cubo;
         System.out.println("POR FAVOR, INSERTE UN NUMERO ");
-        num = Integer.parseInt(System.console().readLine());
-        System.out.println("\n \n \n \n \n \n");
-        for (cont = num; cont<=(num+5);cont++){
-            cuadrado=cont*cont; //realiza el cuadrado
-            cubo=cont*cont*cont; //realiza el cubo
-            System.out.println("--------------------------------");
-            System.out.println("Numero: "+cont+" Cuadrado: "+cuadrado+" Cubo: "+cubo);
+        int num = Integer.parseInt(System.console().readLine());
+        int siguiente; //proximo numero
+        int actual=1; //primer numero 
+        int anterior=0; //el guardado en cada suma
+        //PARA QUE SE PUEDAN REALIZAR LOS CALCULOS, EL NUMERO ANTERIOR = 0 DEBIDO A QUE TIENE QUE TENER UN INICIO
+        //PARA NO QUEDARNOS EN 0+NADA EL NUMERO ACTUAL SERA 1, PARA QUE INICIE LA SUCESION
+       System.out.println("SUCESION DE FIBONACCI");
+        // anterior -> ACTUAL -> SIGUIENTE
+
+        for (int cont = 1; cont <=num; cont++)
+            {
+                siguiente = actual+anterior; //CALCULA EL NUMERO SUMANDO EL VALOR ACTUAL Y EL ANTERIOR
+                System.out.print(siguiente+" ");
+                anterior = actual; //EL NUMERO ANTERIOR AL IMPRESO POR PANTALLA SE CONVIERTE EN EL ANTIGUO
+                actual = siguiente; //EL NUMERO EL NUMERO IMPRESO EN PANTALL SE CONVIERTE EN EL ANTERIOR
+                
+            }            
             
-            }   
     
     }
 }
