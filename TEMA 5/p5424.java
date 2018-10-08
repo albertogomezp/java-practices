@@ -31,7 +31,7 @@ public class p5424 {
         esp = esp.concat(" "); //ESP VA ALMACENANDO LOS ESPACIOS DE LA PIRAMIDE
       }  
 
-      for (int cont3=1; cont3<alt; cont3++){
+      for (int cont3=1; concleaclt3<alt; cont3++){
         System.out.print(cont3);
       }     
       //System.out.print(alt);
