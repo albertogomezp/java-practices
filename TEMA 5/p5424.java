@@ -16,7 +16,7 @@ public class p5424 {
     for (int alt = 1; alt <=num; alt++ ){ //INT ALT DA LA ALTURA DE LA PIRAMIDE Y VA MARCANDO LA LINEA A PRINTEAR
       for(int cont=1; cont<=numcont; cont++){ //COLOCA LOS ESPACIOS DE LA PIRAMIDE
         esp = esp.concat(" "); //ESP VA ALMACENANDO LOS ESPACIOS DE LA PIRAMIDE
-      /*  P.E) Si introducimos altura 4, obtendremos:
+          /*P.E) Si introducimos altura 4, obtendremos:
           |   1   | ----> 3 y 3 espacios = 6  numeros = 1 total = 7
           |  121  | ----> 2 y 2 espacios = 4  numeros = 3 total = 7
           | 12321 | ----> 1 y 1 espacios = 2  numeros = 5 total = 7
@@ -27,18 +27,28 @@ public class p5424 {
       numcont--; //Baja en 1 el numero de espacios que nos encontramos. siendo num-1,num-2,...num-n
       //-----------------PRINT---------------
       System.out.print(esp);
+/*
       for(int cont2=1; cont2<=alt; cont2++){ //COLOCA EL RELLENO DE LA PIRAMIDE
         esp = esp.concat(" "); //ESP VA ALMACENANDO LOS ESPACIOS DE LA PIRAMIDE
       }  
-
+*/
       for (int cont3=1; cont3<alt; cont3++){
-        System.out.print(cont3);
-      }     
+        if(cont3<10){
+          System.out.print(cont3); 
+         } 
+         else{
+          System.out.print(cont3%10); 
+         }      
+        }     
       //System.out.print(alt);
       for (int cont4=alt; cont4>0; cont4--){
-        System.out.print(cont4);
+        if(cont4<10){
+         System.out.print(cont4); 
+        } 
+        else{
+         System.out.print(cont4%10); 
+        }
       }    
-
       System.out.println(esp);    
       esp ="";
       //-----------------RESET---------------
