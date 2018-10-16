@@ -32,8 +32,6 @@ public class p5435 {
           AnchoExt = AnchoExt.concat(" ");
         }     
       System.out.println(AnchoExt+"*");
-      for (int continferior = alt; continferior<alt; continferior--){ //contador de la parte de abajo
-      }
       AnchoIntIni = 1;
       AnchoExtIni = alt2-3;
       AnchoInt="";
