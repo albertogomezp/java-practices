@@ -4,13 +4,8 @@ public class p5435 {  //PENDIENTE DE DOCUMENTAR
     System.out.print(" POR FAVOR, INSERTE UN LA ALTURA:  ");         //INTRODUCE EL NUMERO
     int alt = Integer.parseInt(System.console().readLine()); //CONOCEREMOS LA ALTURA
     int alt2= (alt+1)/2; //nos sirve para poder hacer modificaciones del valor de la altura sin perderlo.
-    int alt3= alt;
     String AnchoInt =""; //para calcula las distancias entre ambas lineas de la X
     String AnchoExt ="";
-    int Anchocont = 0;
-    int diferencia = 0;
-    int cont2 = 2;
-    int cont4 = 1;
     int context = 1;
     int contint = 1;
     //------------------------ OPERACIONES ----------------------------------------------
