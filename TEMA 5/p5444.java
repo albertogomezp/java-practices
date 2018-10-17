@@ -16,7 +16,7 @@ public class p5444{
       for (int cont2 = 1; cont2<=(longi-div)+1; cont2++){ //PARA HACER EL DIVISOR DEL TAMAÑO DEL NUMERO INSERTADO
         divisor=divisor*10;
       }
-      System.out.println(num/divisor+""+num2+""+num%divisor); //LA DIVISION Y EL RESTO
+      System.out.println(num/divisor+""+num2+""+num%divisor); //LA DIVISION Y EL RESTO DAN LOS NUMEROS ORIGINALES E INTRODUCE EL REQUERIDO
    } 
    else {
      System.out.println("ERROR");
