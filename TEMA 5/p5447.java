@@ -17,7 +17,6 @@ public class p5447 {
       for(int cont = 1; cont<(alt-1);cont++){ //PRINT DE LOS LADOS
         System.out.println("M "+espacio+" M");
       }
-      //System.out.print(" ");
       for(int cont2 = 1; cont2<=ancho; cont2++){ //PRINT DE LA DE LA LINEA DEL CENTRO
         System.out.print("M ");
       }
