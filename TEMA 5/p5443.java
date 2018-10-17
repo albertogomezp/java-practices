@@ -1,4 +1,4 @@
-public class p5443{  //------------------------- INACABADO ---------------------------------
+public class p5443{ 
   public static void main(String[] args){
     // ---------------- INTRODUCCION DE DATOS ------------
     System.out.print("INTRODUZCA UN NUMERO: ");
