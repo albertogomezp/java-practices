@@ -1,4 +1,4 @@
-public class p5443{ 
+public class p5444{ 
   public static void main(String[] args){
     // ---------------- INTRODUCCION DE DATOS ------------
     System.out.print("INTRODUZCA UN NUMERO: ");
@@ -7,6 +7,8 @@ public class p5443{
     long num = Long.parseLong( numero );
     System.out.print("INTRODUZCA LA POSICION POR LA QUE QUIERE PARTIR EL NUMERO: ");
     int div = Integer.parseInt(System.console().readLine());
+    System.out.print("INTRODUZCA EL NUMERO QUE QUIERE INSERTAR: ");
+    int num2 = Integer.parseInt(System.console().readLine());
     // ---------------- OPERACIONES ------------------
     if(div<=longi){ //PARA QUE NO INSERTEN UN NUMERO DIVISOR MAYOR QUE LA LONGITUD DEL NUMERO A DIVIDIR
       int divisor = 1;
@@ -14,7 +16,7 @@ public class p5443{
       for (int cont2 = 1; cont2<=(longi-div)+1; cont2++){ //PARA HACER EL DIVISOR DEL TAMAÑO DEL NUMERO INSERTADO
         divisor=divisor*10;
       }
-      System.out.println(num/divisor+" Y "+num%divisor); //LA DIVISION Y EL RESTO
+      System.out.println(num/divisor+""+num2+""+num%divisor); //LA DIVISION Y EL RESTO
    } 
    else {
      System.out.println("ERROR");
