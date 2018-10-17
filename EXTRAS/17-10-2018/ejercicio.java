@@ -29,16 +29,9 @@ public class ejercicio {
             tres =Integer.toString(cont3);
           }
           System.out.print(uno+"-"+dos+"-"+tres+"      ");
-          if (cont3 == 9){
-            System.out.println("     ");
-          }
         }
+        System.out.println("");
       }
-      
-    }
-
-
-
-    
+    } 
   }      
 }
