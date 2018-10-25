@@ -5,7 +5,6 @@ public class p638{
     String Resultx ="";
     String Result2 ="";
     String adjust ="";
-    int victory = 0;
     int Prob = 0;
     for(int bet = 1 ; bet <= 3 ; bet++){
       System.out.print("                    APUESTA #"+bet+"                  ");

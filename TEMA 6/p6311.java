@@ -49,7 +49,7 @@ public class p6311{
       }
     }
     System.out.print(" SOBRESALIENTES: "+ContSob+"\n NOTABLES: "+ContNot+" \n BIEN: "+ContBien+" \n SUFICIENTE: "+ContSuf+" \n SUSPENSOS: "+ContSus);
-
+ 
 
 
 
