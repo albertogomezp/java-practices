@@ -6,20 +6,35 @@ public class p6314{
     int RandomNumber = 0;
     System.out.println("PIENSE EN UN NUMERO");
     int Hints = 1;
+    int range = 101;
+    int adjust = 0;
     boolean Answer = false;
     String pregunta = "";
-    while(Hints <=5 || Answer == true)
-      RandomNumber = (int)(Math.random()*101);
+    while(Hints <=5){
+      RandomNumber = (int)((Math.random()*range)+adjust);
       System.out.println("ES EL "+RandomNumber+"? ('true' - 'false') ");
       Answer = Boolean.parseBoolean(System.console().readLine());
       if(Answer == false){
         System.out.println("EL NUMERO "+RandomNumber+" ES MAYOR O MENOR QUE TU NUMERO ('mayor' - 'menor') ");
         pregunta = System.console().readLine();
-        if()
+        if(pregunta.equals("mayor")==false){
+          System.out.println("mayor");
+          adjust = range - RandomNumber;
+          adjust = RandomNumber;
+        }
+        else{
+          System.out.println("menor");
+          range=87;
+          adjust=0;
+        }
       }
+      else{
+        Hints = 5;
+      }
+    Hints++;  
     }
-
-
+    System.out.println("end");
 
   }
-}  
+}
+  
