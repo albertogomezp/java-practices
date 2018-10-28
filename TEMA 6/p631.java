@@ -6,7 +6,7 @@
     for(int dice =1; dice <=3; dice++){
       DiceRoll = (int)(Math.random()*6+1 );
       DiceAdd = DiceAdd + DiceRoll;
-      System.out.println("La tirada del dado numero "+dice+" es: "+DiceRoll);
+      System.out.println("La tirada del dado #"+dice+" es: "+DiceRoll);
     }
     System.out.print("La suma de las tiradas es: "+DiceAdd);
   }
