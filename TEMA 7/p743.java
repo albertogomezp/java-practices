@@ -1,15 +1,13 @@
 public class p743{ 
   public static void main(String[] args){
-    int [] Numero = new int [20];
-    int [] Cuadrado = new int [20];
-    int [] Cubo = new int [20];
-    for (int IntroduceNumbers = 0; IntroduceNumbers <= Numero.length; IntroduceNumbers++){
-      Numero[IntroduceNumbers] = (int)(Math.random()*101);
-      System.out.print("Numero #"+IntroduceNumbers+" = "+Numero[IntroduceNumbers]+"          ");
-      Cuadrado[IntroduceNumbers] = Numero[IntroduceNumbers]*Numero[IntroduceNumbers];
-      System.out.print("Cuadrado = "+Cuadrado[IntroduceNumbers]+"          ");
-      Cubo[IntroduceNumbers] = Numero[IntroduceNumbers]*Numero[IntroduceNumbers]*Numero[IntroduceNumbers];
-      System.out.println("Cubo =  "+Cubo[IntroduceNumbers]+"          ");
+    int [] Inverter = new int [10];
+    for( int AskNumber = 0; AskNumber <Inverter.length; AskNumber++){
+      System.out.print("Please, introduce a number: ("+AskNumber+"/10) ");
+      Inverter[AskNumber] = Integer.parseInt(System.console().readLine());
     }
+    for (int ShowNumbers = Inverter.length-1; ShowNumbers>=0; ShowNumbers--){
+      System.out.println("RequestedNumber["+ShowNumbers+"] = "+Inverter[ShowNumbers]);
+    }
+   
   }
 }
