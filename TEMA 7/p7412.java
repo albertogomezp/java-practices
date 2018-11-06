@@ -14,7 +14,7 @@ public class p7412{
     int InitialNumber = Integer.parseInt(System.console().readLine());
     System.out.print("Insert the last number "); //---> This is the position where Initialnumber will be inserted
     int FinalNumber =  Integer.parseInt(System.console().readLine());
-    if( InitialNumber < FinalNumber){ //---> Checking numbers
+    if( (InitialNumber < FinalNumber)  && (InitialNumber>=0) && (InitialNumber<9) && (FinalNumber>=1) && (FinalNumber<=9)  ){ //---> Checking numbers
       //---------------------ADJUST ZONE-----------
       int bridge = Numbers[FinalNumber]; //---> saves the value
       NumbersAux[FinalNumber] = Numbers[InitialNumber]; //---> Sets the Initialnumber into the FinalNumber
