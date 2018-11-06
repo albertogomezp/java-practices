@@ -3,16 +3,16 @@ public class p7412{
     int [] Numbers =  new int[10];
     int [] NumbersAux = new int[10];
     //---> Asking for numbers
-    System.out.println(" Introduce 10 numbers ");
+    System.out.println(" Insert 10 numbers ");
     for (int Introducing = 0; Introducing <= Numbers.length-1 ; Introducing++ ){
       System.out.print(" ("+Introducing+"/9) = ");
       Numbers[Introducing] = Integer.parseInt(System.console().readLine());
     }
     System.out.println("--------------------------------");
 
-    System.out.print("Introduce the initial number: "); //---> This number will be inserted in the position of the FinalNumber
+    System.out.print("Insert the initial number: "); //---> This number will be inserted in the position of the FinalNumber
     int InitialNumber = Integer.parseInt(System.console().readLine());
-    System.out.print("Introduce the last number "); //---> This is the position where Initialnumber will be inserted
+    System.out.print("Insert the last number "); //---> This is the position where Initialnumber will be inserted
     int FinalNumber =  Integer.parseInt(System.console().readLine());
     if( InitialNumber < FinalNumber){ //---> Checking numbers
       //---------------------ADJUST ZONE-----------
