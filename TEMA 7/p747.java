@@ -1,10 +1,11 @@
 public class p747{ 
-  public static void main(String[] args){
+  public static void main(String[] args) throws InterruptedException {
     int [] Numbers =  new int[100];
     //---> Generating numbers
     for (int GenerateNumbers = 0; GenerateNumbers <Numbers.length-1; GenerateNumbers++){
       Numbers[GenerateNumbers] = (int)(Math.random()*21);
       System.out.print(Numbers[GenerateNumbers]+" ");
+      Thread.sleep(50);
     }
     //---> Asking for the Wanted Number and also the number we are going to replace for it
     System.out.print("\n Please, insert a number: ");
@@ -21,6 +22,7 @@ public class p747{
       else{
         System.out.print(Numbers[ReplaceNumbers]+" "); //---> print
       }
+      Thread.sleep(50);
     }
   }
 }
