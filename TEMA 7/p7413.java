@@ -4,6 +4,7 @@ public class p7413{
 		//---> Generating numbers
 		int MaximunNumber = 0;
 		int MinumNumber = 501;
+		System.out.println("\n \n -----------------------------------------------------");
 		for (int GenerateNumbers = 0; GenerateNumbers <Numbers.length-1; GenerateNumbers++){
 			Numbers[GenerateNumbers] = (int)(Math.random()*501);
 			System.out.print(Numbers[GenerateNumbers]+" ");
@@ -15,27 +16,28 @@ public class p7413{
 
 		System.out.print("\n Do you wanna indicate the maxiumn number or the minimun (1 = Max ; 0 = Min): ");
 		int Answer = Integer.parseInt(System.console().readLine());
-		for (int PrintNumbers = 0 ; PrintNumbers <= Numbers.length-1 ; PrintNumbers++){
-
-
-
-			if (Answer == 1){
+		for (int PrintNumbers = 0 ; PrintNumbers <= Numbers.length-1 ; PrintNumbers++){ //---> This prints the numbers
+			if (Answer == 1){ //---> If we select MaximunNumber
 				if(Numbers[PrintNumbers] == MaximunNumber){ 
-					System.out.print("["+Numbers[PrintNumbers]+"] ");
+					System.out.print("["+Numbers[PrintNumbers]+"] "); //--> Print just the number
 				}
 				else {
-					System.out.print(Numbers[PrintNumbers]+" ");
+					System.out.print(Numbers[PrintNumbers]+" "); //--> The remaining numbers
 				}
 			}
-			else if (Answer == 0){
+			else if (Answer == 0){ //---> If we select MinimunNumber
 				if(Numbers[PrintNumbers] == MinumNumber){
-					System.out.print("["+Numbers[PrintNumbers]+"] "); 	
+					System.out.print("["+Numbers[PrintNumbers]+"] "); //--> Print just the number
 				}
 				else {
-					System.out.print(Numbers[PrintNumbers]+" ");
+					System.out.print(Numbers[PrintNumbers]+" "); //-->  the remaining numbers
 				}
 			}
-			Thread.sleep(50);
+			else {
+				System.out.println("ERROR");
+				break;
+			}
+			Thread.sleep(50); //--> It is not relevant, but this makes the practise more cute
 		}
 	}
 }
