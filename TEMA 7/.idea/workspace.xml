@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a73dd09-7b07-4f62-9fca-ecd217792f87" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/p741.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p741.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p7410.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p7410.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p7411.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p7411.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p7412.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p7412.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p7413.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p7413.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p742.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p742.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p743.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p743.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p744.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p744.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p745.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p745.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p746.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p746.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p747.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p747.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p748.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p748.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p749.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p749.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/p7415.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/p7415.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/p74152.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/p74152.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,6 +20,7 @@
     <session id="1117207980">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -63,13 +41,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="746" />
+          <entry key="java" value="750" />
           <entry key="p74152" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="845" />
+          <entry key="JAVA" value="849" />
           <entry key="Scratch" value="6" />
         </counts>
       </usages-collector>
@@ -77,20 +55,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/p7415.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="69">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/p74152.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="497">
+              <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -109,10 +87,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/p7415.java" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
         <option value="$PROJECT_DIR$/src/p74152" />
         <option value="$PROJECT_DIR$/src/p74152.java" />
+        <option value="$PROJECT_DIR$/src/p7415.java" />
       </list>
     </option>
   </component>
@@ -149,7 +127,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542103220627" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542104486843" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="settings.editor.selected.configurable" value="MTCustomThemeConfigurable" />
   </component>
@@ -165,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.p74152">
+  <component name="RunManager" selected="Application.p7415">
     <configuration name="p7415" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="p7415" />
       <module name="TEMA 7" />
@@ -194,9 +172,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.p7415" />
         <item itemvalue="Application.p74152" />
         <item itemvalue="Java Scratch.scrath" />
-        <item itemvalue="Application.p7415" />
       </list>
     </recent_temporary>
   </component>
@@ -215,6 +193,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -239,8 +218,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.10671141" />
-      <window_info active="true" anchor="right" id="Run" order="8" sideWeight="0.50889194" side_tool="true" visible="true" weight="0.38926175" />
-      <window_info anchor="right" id="Debug" order="9" sideWeight="0.49110806" visible="true" weight="0.38926175" />
+      <window_info anchor="right" id="Run" order="8" sideWeight="0.50889194" side_tool="true" weight="0.38926175" />
+      <window_info anchor="right" id="Debug" order="9" sideWeight="0.49110806" weight="0.38926175" />
       <window_info anchor="right" id="Messages" order="10" sideWeight="0.49658003" weight="0.3295302" />
     </layout>
     <layout-to-restore>
@@ -280,7 +259,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/p74152.java</url>
-          <line>68</line>
+          <line>76</line>
           <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
@@ -301,13 +280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/p7415.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/p7415.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -320,8 +292,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/p74152.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="497">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/p7415.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>

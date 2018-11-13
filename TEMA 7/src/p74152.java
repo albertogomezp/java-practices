@@ -1,4 +1,11 @@
 import java.util.Scanner;
+/*********************************
+*                                *
+*    Alberto Gomez Peña - 1DAW   *
+*     IES Campanillas - PTA      *
+*     TEMA 7 PRACTICA p7415      *
+*                                *
+*********************************/
 
 public class p74152{
   public static void main(String[] args ) throws InterruptedException{
@@ -50,29 +57,28 @@ public class p74152{
       //----> FIRST LOOKING FOR EMPTY TABLES, THEN, WITH 1 DINER,...
 
       while(TableSearch<=8 && Tables[TableSearch]!=Filled){
-        TableTemp = Tables[TableSearch];
-        if(Filled<=TableTemp){
+        TableTemp = Tables[TableSearch]; //--> Anti-crash
+        if(Filled<=TableTemp){ 
           cont++;
         }
-        TableSearch++;
+        TableSearch++; //--> Check next Table
       }
+      //--> check if it is posible to sit all together
       TableTemp = (Tables[TableSearch]+Diners);
-      if(TableTemp <= 4){
+      if(TableTemp <= 4){  //--> If it is possible
         Tables[TableSearch]=TableTemp;
-        
         System.out.println("please go to table #"+(TableSearch+1));
       }
-      else{
+      else{ //--> if not
         System.out.println("We are sorry, we can not attend you at this moment");
       }
+      //-->Adjust area
       TableSearch=0;
       if(cont==9){
         Filled++;
       }
       cont = 0;
-
-
-      //--> Just for checking
+      //-->checking
       for (int i = 0; i <= Tables.length - 1; i++) {
         System.out.print((i + 1) + " ");
       }
