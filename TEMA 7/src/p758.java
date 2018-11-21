@@ -65,7 +65,7 @@ public class p758 {
 
     int Run = 1;
 
-    for (int Lap = 1; Lap <= HalfSize; Lap++) { //---> 1st circle (external)
+    for (int Lap = 1; Lap <=HalfSize; Lap++) { //---> 1st circle (external)
 
       for (int MoveDirection = 1; MoveDirection <= 4; MoveDirection++) { //--> Sets direction
          
@@ -92,7 +92,7 @@ public class p758 {
               Run += Swap;
             break;
           }
-        } while ((Run != EndingPoint) );
+        } while ( ((Run != EndingPoint1+1)&& MoveDirection ==1) || ((Run != EndingPoint+1)&& MoveDirection ==2) || ((Run != EndingPoint-1)&& MoveDirection ==3) || ((Run != EndingPoint-1)&& MoveDirection ==4)    );
         switch (MoveDirection) { //--> Setting the NEXT 'run'
           case 1: //--> Going top-bottom 
             Constant1++;
@@ -138,7 +138,7 @@ public class p758 {
     for (int y = 0; y < 12; y++) {
       System.out.printf("%3d ", y);
       for (int x = 0; x < 12; x++) {
-        temp = Cuadro1[y][x];
+        temp = Cuadro2[y][x];
         System.out.printf("|%3d", temp);
       }
       System.out.println("");
