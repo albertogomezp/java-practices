@@ -165,7 +165,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542749414762" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542799032937" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -182,14 +182,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.p758">
-    <configuration name="p7415" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="p7415" />
-      <module name="TEMA 7" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.p759">
     <configuration name="p751" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="p751" />
       <module name="TEMA 7" />
@@ -218,20 +211,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="p759" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="p759" />
+      <module name="TEMA 7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.p7415" />
       <item itemvalue="Application.p751" />
       <item itemvalue="Application.p757" />
       <item itemvalue="Application.p757v2" />
       <item itemvalue="Application.p758" />
+      <item itemvalue="Application.p759" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.p759" />
         <item itemvalue="Application.p758" />
         <item itemvalue="Application.p751" />
         <item itemvalue="Application.p757v2" />
         <item itemvalue="Application.p757" />
-        <item itemvalue="Application.p7415" />
       </list>
     </recent_temporary>
   </component>
