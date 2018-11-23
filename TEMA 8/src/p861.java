@@ -27,6 +27,7 @@ public class p861{
       long NumbLong = EsPri.nextLong();
       solutionBoolean = EsPrimo(NumbLong);
       System.out.println(solutionBoolean);
+      break;
       case 3:
       // siguientePrimo: Devuelve el menor primo que es mayor al número que se pasa como parámetro.
       Scanner EsPri2= new Scanner(System.in);
@@ -55,17 +56,25 @@ public class p861{
     return Confirmacion;
   }
   public static boolean EsPrimo (long Number){
-    long Divider = 0;
-    boolean Confirmacion = false;
-    for(long Cont = 2; Cont < Number; Cont++){
-      if(Number%Cont == 1){
-        Divider++;
-      }
+    boolean primo = true;
+    int cont2 = 0; 
+    if(Number<=2){
+      primo = false;
     }
-    if(Divider <=2){
-      Confirmacion = true;
+    else{
+      for (int cont = 2; cont <=Number; cont++){  
+        if((Number%cont) == 0){
+          cont2++; 
+        }
+      } 
     }
-    return Confirmacion;
+    if(primo != false && (cont2<2)){
+     primo = true;
+    } else{
+      primo = false;
+    }
+    
+    return primo;
   }
   public static long SiguientePrimo (long Numb){
     long checking = Numb;
@@ -76,5 +85,4 @@ public class p861{
     return Confirmacion1;
   }
 }
-  
-  
+
