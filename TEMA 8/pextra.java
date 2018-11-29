@@ -8,10 +8,11 @@ public class pextra {
     J[0][0]= 7;
     J[1][0]= 5;
     int Ret = 0;
-    while (J[0][1] !=1 || J[1][1] != 1){
+    boolean exit = false;
+    while ((J[0][1] !=1 || J[1][1] != 1) || exit !=true){
       System.out.println("-----------------------------");
       System.out.println(" J1: ("+J[0][1]+"/"+J[0][0]+") \n J2: ("+J[1][1]+"/"+J[1][0]+")");
-      System.out.println("SELECT AN ACTION \n7.- Fill J1 \n8.- Fill J2 \n4.- Transfer J1 -> J2 \n5.- Transfer J2 -> J1 \n1.- Empty J1 \n2.- Empty J2 ");
+      System.out.println("SELECT AN ACTION \n7.- Fill J1 \n8.- Fill J2 \n4.- Transfer J1 -> J2 \n5.- Transfer J2 -> J1 \n1.- Empty J1 \n2.- Empty J2 \n9.- Exit");
       int selection = scanner.nextInt();
       switch(selection){
         case 7: //F J1
@@ -35,6 +36,9 @@ public class pextra {
         break;
         case 2: //E J2
         J[1][1] = empty(J[1][1]); 
+        break;
+        case 9:
+        exit = true;
         break;
       }
     } 
