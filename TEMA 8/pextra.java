@@ -9,14 +9,14 @@ public class pextra {
     J[1][0]= 5;
     int Ret = 0;
     boolean exit = false;
-    while ((J[0][1] !=1 || J[1][1] != 1) || exit !=true){
+    while (J[0][1] !=1 && J[1][1] != 1 && exit!=true){
       System.out.println("-----------------------------");
       System.out.println(" J1: ("+J[0][1]+"/"+J[0][0]+") \n J2: ("+J[1][1]+"/"+J[1][0]+")");
       System.out.println("SELECT AN ACTION \n7.- Fill J1 \n8.- Fill J2 \n4.- Transfer J1 -> J2 \n5.- Transfer J2 -> J1 \n1.- Empty J1 \n2.- Empty J2 \n9.- Exit");
       int selection = scanner.nextInt();
       switch(selection){
         case 7: //F J1
-        J[0][1] = Fill(J[0][0],J[0][1]); 
+        J[0][1] = (J[0][0],J[0][1]); 
         break;
         case 8: //F J2
         J[1][1] = Fill(J[1][0],J[1][1]);        
@@ -24,7 +24,7 @@ public class pextra {
         case 4: //T J1->J2
           Ret = transfer(J[0][1],J[0][0],J[1][1],J[1][0]);
           J[0][1]= Ret/10;
-            J[1][1]= Ret%10;
+          J[1][1]= Ret%10;
         break;
         case 5: //T J2->J1
           Ret = transfer(J[1][1],J[1][0],J[0][1],J[0][0]);
@@ -37,12 +37,14 @@ public class pextra {
         case 2: //E J2
         J[1][1] = empty(J[1][1]); 
         break;
-        case 9:
+        case 9: //EXIT
         exit = true;
         break;
       }
     } 
-    System.out.println("YOU WON!");
+    if(exit!=true) {
+        System.out.println("YOU WON!");
+    }
   }
   public static int Fill(int MAX, int FILLED) { 
     FILLED = MAX;
