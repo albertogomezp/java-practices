@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import mats.operaciones;
 public class p86_1_to_14{ 
   public static void main(String[] args) {
     //--> Setup (common vars)
