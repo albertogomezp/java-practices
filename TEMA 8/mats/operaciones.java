@@ -180,4 +180,16 @@ public static boolean EsCapicua (String Cad1, char[]ar1,int Longi){
     int SolInt = Integer.parseInt(Sol);
     return SolInt;
   }
+  public static int BinToDec (String NumStrng) {
+		char ar[] = NumStrng.toCharArray();
+		int Numlength = NumStrng.length();
+		int Exponent = 1;
+		int BinNumber = 0;
+		for (int cont = Numlength-1; cont>=0;cont--) {
+			BinNumber = BinNumber+( (ar[cont]-48)*Exponent );
+			//System.out.println("BinNumber "+BinNumber+"  Ar[cont] "+ar[cont]+"  Exponent "+Exponent+"    "+((ar[cont])-48));
+			Exponent *= 2;
+		}
+    return BinNumber;	
+    }
 } 
