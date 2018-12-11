@@ -35,7 +35,7 @@ public class arrays{
     }
     return MinNumber;
   } 
-    /**
+  /**
   *  Devuelve el maximo del array que se pasa como parámetro.
   * 
   * @param Ar     Array
@@ -47,14 +47,25 @@ public class arrays{
     for( int Search = 0; Search <Ar.length; Search++){
       if (Ar[Search] > MaxNumber){ // ---> In case this number is the Maximun (relative)
         MaxNumber = Ar[Search];
-       
+        
       }
     }
     return MaxNumber;
   } 
-  
-  
-  
+  /**
+  *  mediaArrayInt: Devuelve la media del array que se pasa como parámetro.
+  * 
+  * @param Ar     Array
+  * @return      La media de <code>ar</code>
+  */
+  public static int mediaArrayInt(int[] Ar) {
+    int media = 0;
+    // ---> Asking for numbers and comparing 
+    for( int cont = 0; cont <Ar.length; cont++){
+     media += Ar[cont];
+    }
+    return media/Ar.length;
+  }  
   /**
   * Para imprimir arrays
   * @param ArPrint
