@@ -2,26 +2,34 @@ package conversores;
 import java.util.Scanner;
 public class funciones{  
 	public static String BinBase (String NumberBinBase) {
+		/*
+		* Convierte un numero binario a otras bases
+		*
+		* @param NumberBinBase numero binario introducido
+		* 
+		*	@return Numero convertido a su respectiva base
+		*/
+
 		char ar[] = NumberBinBase.toCharArray();
 		int Numlength = NumberBinBase.length();
 		int Exponent = 1;
 		int BinNumber = 0;
 		String NumbConvertido ="";
-		System.out.println("Introduzca la base a la que quiere convertir (1.DEC 2.OCT 3.HEX");
+		System.out.println("Introduzca la base a la que quiere convertir (1.DEC 2.OCT 3.HEX)");
 		Scanner BaseDes = new Scanner(System.in);
-		string BaseIntSel = BaseDes.nextLine();
+		String BaseIntSel = BaseDes.nextLine();
 		switch (BaseIntSel){
-			case 1: //to DEC
+			case "1": //to DEC
 			NumbConvertido = BinToDec(NumberBinBase);
 			break;
-			case 2: //to OCT
+			case "2": //to OCT
 			break;
-			case 3: //to HEX
+			case "3": //to HEX
 			break;
 		}
-    return NumbConvertido;	
-  }
-  public static String BinToDec (String NumStrng) {
+		return NumbConvertido;	
+	}
+	public static String BinToDec (String NumStrng) {
 		char ar[] = NumStrng.toCharArray();
 		int Numlength = NumStrng.length();
 		int Exponent = 1;
@@ -31,9 +39,9 @@ public class funciones{
 			//System.out.println("BinNumber "+BinNumber+"  Ar[cont] "+ar[cont]+"  Exponent "+Exponent+"    "+((ar[cont])-48));
 			Exponent *= 2;
 		}
-    return (BinNumber.toString());	
-  }
-	public static int BintoOct (String NumStrng) {
+		return (Integer.toString(BinNumber));	
+	}
+	/*	public static int BintoOct (String NumStrng) {
 		char ar[] = NumStrng.toCharArray();
 		int Numlength = NumStrng.length();
 		int Exponent = 1;
@@ -50,6 +58,7 @@ public class funciones{
 				OctNumber=OctNumber*10;
 			} 
 		}
-    return OctNumber.toString();	
-  }
+		return (Integer.toString(OctNumber));	
+	}
+	*/
 }
