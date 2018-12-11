@@ -21,9 +21,6 @@ public class arrays{
   } 
   /**
   *  Devuelve el mínimo del array que se pasa como parámetro.
-  * <p>
-  * Por ejemplo, <code>generaArrayInt(100, 10, 30)</code> devolvería un array
-  * de 100 números generados al azar comprendidos entre 10 y 30.
   * 
   * @param Ar     Array
   * @return      Devuelve el menor numero encontrado en <code>Ar[]</code>
@@ -38,6 +35,12 @@ public class arrays{
     }
     return MinNumber;
   } 
+    /**
+  *  Devuelve el maximo del array que se pasa como parámetro.
+  * 
+  * @param Ar     Array
+  * @return      Devuelve el mayor numero encontrado en <code>Ar[]</code>
+  */
   public static int maximoArrayInt(int[] Ar) {
     int MaxNumber = 0;
     // ---> Asking for numbers and comparing 
