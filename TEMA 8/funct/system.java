@@ -67,7 +67,13 @@ public class system{
     System.out.print("\nPLANTA ACTUAL "+planta+"\nPLANTA DESTINO: ");
     int destino = scanner.nextInt();
     if(planta<destino){
-      pantalla = subirPlanta(pantalla, planta, destino);
+      try{
+        pantalla = subirPlanta(pantalla, planta, destino);
+      }
+      catch(){
+         
+      }
+    
     }
     if(planta>destino){
       pantalla = bajarPlanta(pantalla, planta, destino);
@@ -86,11 +92,12 @@ public class system{
   * @return el array en la nueva posicion + impresion de la animación de subida
   * @throws InterruptedException
   */
-  public static char[] subirPlanta (char[] pantalla,int planta,int destino) {
+  public static char[] subirPlanta (char[] pantalla,int planta,int destino) throws InterruptedException{
     //System.out.println("("+destino+")");
     for(int i = planta; i<destino; i++){
       pantalla[i]=' ';
       pantalla[(i+1)]='*';  
+      Thread.sleep(500);
       System.out.println("3 ["+pantalla[3]+"]\n2 ["+pantalla[2]+"]\n1 ["+pantalla[1]+"] \n0 ["+pantalla[0]+"] (bajo)");
     }
     return pantalla;
@@ -118,7 +125,7 @@ public class system{
   */
   public static int PlantaActual (char[] pantalla) {
     int planta  = 0;    
-    for(int i = 0; i>pantalla.length; i++){
+    for(int i = 0; i<pantalla.length; i++){
       if(pantalla[i] == '*'){
         planta = i;
       }
