@@ -1,0 +1,3 @@
+Enunciados
+- Ejercicio 1: Piedra, papel, tijera
+- Ejercicio 2: Obtener nº7 y ordearlos al principio en un vector
