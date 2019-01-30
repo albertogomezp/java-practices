@@ -5,6 +5,7 @@ public class Gestor{
     int edad = 0;
     String nombre = "";
     for(int x = 0; x<4; x++){
+      Argatos[x] = new Gato();
       System.out.println("Introduzca el nombre del gato");
       nombre = System.console().readLine();
       Argatos[x].setNombreGato(nombre);
