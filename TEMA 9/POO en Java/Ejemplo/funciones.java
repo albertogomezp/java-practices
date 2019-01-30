@@ -1,4 +1,3 @@
-package funct;
 public class funciones{
   /**
    * Muestra las opciones
