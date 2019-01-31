@@ -68,7 +68,6 @@ public class Torre{
     int variable = 0;
     switch (Destino.AlturaRelativa){
       case 0:
-      //System.out.println("0     O:"+this.Relleno[AlturaRelativa-1]+" D:"+Destino.Relleno[Destino.AlturaRelativa]);
       if( Destino.Relleno[Destino.AlturaRelativa] <= this.Relleno[AlturaRelativa-1]){
         Destino.setRelleno(this.Relleno[this.AlturaRelativa-1],Destino.AlturaRelativa); 
         Destino.aumentarAlturaRelativa(Destino.AlturaRelativa);
@@ -79,11 +78,14 @@ public class Torre{
       default:
       //System.out.println("d     O:"+this.Relleno[AlturaRelativa-1]+" D:"+Destino.Relleno[Destino.AlturaRelativa-1]);
       variable = this.Relleno[AlturaRelativa];
-      variable --;
       if(variable >0){
         variable--;
       }
-      if( Destino.Relleno[Destino.AlturaRelativa] < variable){
+      if(variable >0){
+        variable--;
+      }
+      //System.out.println("0     O:"+this.Relleno[AlturaRelativa-1]+" D:"+Destino.Relleno[variable]);
+      if( Destino.Relleno[variable] > this.Relleno[AlturaRelativa-1]){
         Destino.setRelleno(this.Relleno[this.AlturaRelativa-1],Destino.AlturaRelativa); 
         Destino.aumentarAlturaRelativa(Destino.AlturaRelativa);
         this.setRelleno(0, this.AlturaRelativa-1);
