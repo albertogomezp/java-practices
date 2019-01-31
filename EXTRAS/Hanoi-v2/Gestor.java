@@ -37,10 +37,12 @@ public class Gestor {
         }
         System.out.println(" ");
       }
-      System.out.println("Indique Torre de Origen (-1 para salir)");
-      origen = Integer.parseInt(System.console().readLine());
-      System.out.println("Indique Torre de Destino (-1 para salir)");
-      destino = Integer.parseInt(System.console().readLine());
+      System.out.print("Torre de Origen - ");
+      origen = introducirValor();
+
+      System.out.print("Torre de Destino - ");
+      destino = introducirValor();
+      
       torres[origen-1].moverAro(torres[destino-1]);      
       ganar = checkHanoi(torres, numerotorres, aros, ganar);
     }  
@@ -84,5 +86,18 @@ public class Gestor {
       System.out.println("VICTORIA MAGISTRAL");
     }
     return ganar;
+  }
+  public static int introducirValor(){
+    boolean correcto = false;
+    int valor = 0;
+    while(correcto == false){
+      System.out.println("introduzca un valor: ");
+      String introduccion = System.console().readLine();
+      if(introduccion.equals("1") ==true || introduccion.equals("-1") ==true || introduccion.equals("2") ==true || introduccion.equals("3") ==true){
+        valor = Integer.parseInt(introduccion);
+        correcto = true;
+      }
+    }
+    return valor;
   }
 }
