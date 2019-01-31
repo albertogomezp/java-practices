@@ -39,9 +39,9 @@ public class Gestor {
         }
         System.out.println(" ");
       }
-      System.out.println("Indique Aro de Origen (-1 para salir)");
+      System.out.println("Indique Torre de Origen (-1 para salir)");
       origen = Integer.parseInt(System.console().readLine());
-      System.out.println("Indique Aro de Destino (-1 para salir)");
+      System.out.println("Indique Torre de Destino (-1 para salir)");
       destino = Integer.parseInt(System.console().readLine());
       torres[origen-1].moverAro(torres[destino-1]);      
       ganar = checkHanoi(torres, numerotorres, aros, ganar);
