@@ -66,11 +66,18 @@ public class Torre{
   }
   public void moverAro(Torre Destino){
     int variable = 0;
-    
+    boolean mover = false;
+    if((this.getAlturaRelativa())-1 >= 0){
+      mover = true;
+    }
+    else{
+      mover = false;
+    }
+
     
     switch (Destino.AlturaRelativa){
       case 0:
-      if( Destino.Relleno[Destino.AlturaRelativa] <= this.Relleno[AlturaRelativa-1]){
+      if(mover==true && Destino.Relleno[Destino.AlturaRelativa] <= this.Relleno[AlturaRelativa-1] ){
         Destino.setRelleno(this.Relleno[this.AlturaRelativa-1],Destino.AlturaRelativa); 
         Destino.aumentarAlturaRelativa(Destino.AlturaRelativa);
         this.setRelleno(0, this.AlturaRelativa-1);
