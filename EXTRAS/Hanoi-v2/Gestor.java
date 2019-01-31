@@ -4,21 +4,19 @@
 */
 public class Gestor {
   public static void main(String[] args) {
-
     int origen = 0;
     int destino = 0;
     boolean ganar = false;
     int aros;
     int ancho;
     int numerotorres;
+    //Preparar el relleno
     System.out.println("Indique el numero de aros: ");
     aros = Integer.parseInt(System.console().readLine());
     ancho = (aros*2)+1;
     String[] rellenar2 = new String[aros+1];
     rellenar2=rellenoTorres(aros);
     // Inicializa el tablero
-
-
     System.out.println("Indique el numero de Torres: ");
     numerotorres = Integer.parseInt(System.console().readLine());
     Torre[] torres = new Torre[numerotorres];
@@ -45,11 +43,7 @@ public class Gestor {
       destino = Integer.parseInt(System.console().readLine());
       torres[origen-1].moverAro(torres[destino-1]);      
       ganar = checkHanoi(torres, numerotorres, aros, ganar);
-      
-      
-      
     }  
-    
   }
   /**
    * Genera los aros para la primera torre
@@ -71,8 +65,6 @@ public class Gestor {
       //System.out.println(rellenar[cont]);
       relleno="";
     }
-    
-    
     for(int cont = 0; cont <=aros; cont++){
       rellenar2[cont]=rellenar[aros-cont];
     }
@@ -93,8 +85,4 @@ public class Gestor {
     }
     return ganar;
   }
-  
-  
-  
-  
 }
