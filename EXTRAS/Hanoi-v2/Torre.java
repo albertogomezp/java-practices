@@ -5,10 +5,10 @@ public class Torre{
   public int[] Relleno;
   public int AlturaRelativa;
   /**
-   * Crea las torres
-   * @param Altura altura maxima
-   * @param aros Numero de aros
-   */
+  * Crea las torres
+  * @param Altura altura maxima
+  * @param aros Numero de aros
+  */
   public Torre(int aros){
     this.Altura = aros-1;
     this.Aros = aros;
@@ -66,6 +66,8 @@ public class Torre{
   }
   public void moverAro(Torre Destino){
     int variable = 0;
+    
+    
     switch (Destino.AlturaRelativa){
       case 0:
       if( Destino.Relleno[Destino.AlturaRelativa] <= this.Relleno[AlturaRelativa-1]){
@@ -92,10 +94,6 @@ public class Torre{
         this.disminuirAlturaRelativa(this.AlturaRelativa);
       }
     }
-    if(Destino.AlturaRelativa !=0){
-    }
-    
-
   }
   @Override
   public String toString() {
