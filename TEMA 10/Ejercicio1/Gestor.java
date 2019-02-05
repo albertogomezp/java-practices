@@ -1,5 +1,7 @@
 import java.util.ArrayList;
-
+/**
+ * @author Alberto Gómez Peña
+ */
 public class Gestor{
   public static void main(String[] args) {
     ArrayList<String> Nombres = new ArrayList<String>();
