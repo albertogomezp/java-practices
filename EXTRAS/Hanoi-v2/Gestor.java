@@ -100,4 +100,8 @@ public class Gestor {
     }
     return valor;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7c3297d3729a2cd5daddb0d1b549b3d772a58f53
